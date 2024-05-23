@@ -4,7 +4,7 @@ const PlayerScore = ({ athlete }) => {
       <th>
         <p>{athlete.n}</p>
       </th>
-      <td>{athlete.s}</td>
+      <td className="text_align_right">{athlete.s}</td>
     </tr>
   );
 };

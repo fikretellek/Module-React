@@ -1,9 +1,9 @@
-const sortScores = function (rule) {
-  if (rule === "DESC") {
+const sortScores = function (ruleASC) {
+  if (ruleASC) {
     return this.sort((a, b) =>
       parseInt(a.s) > parseInt(b.s) ? -1 : parseInt(a.s) < parseInt(b.s) ? 1 : 0
     );
-  } else if (rule === "ASC") {
+  } else {
     return this.sort((a, b) =>
       parseInt(a.s) > parseInt(b.s) ? 1 : parseInt(a.s) < parseInt(b.s) ? -1 : 0
     );

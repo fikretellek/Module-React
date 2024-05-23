@@ -15,7 +15,10 @@ function App() {
         <h1>High Scores Tables</h1>
       </header>
       <main>
-        <WorldWideTable allCountryScores={[...allCountryScores]} />
+        <section>
+          <WorldWideTable allCountryScores={[...allCountryScores]} />
+        </section>
+
         <section>
           <div>
             <h2>Score Table by Country</h2>
