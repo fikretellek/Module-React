@@ -1,4 +1,5 @@
 import PlayerScore from "../PlayerScore/PlayerScore";
+import "../../functions/sortScores";
 
 const HighScoreTable = ({ country }) => {
   return (
@@ -9,7 +10,7 @@ const HighScoreTable = ({ country }) => {
         </tr>
       </thead>
       <tbody>
-        {country.scores.map((athlete, i) => {
+        {country.scores.sortScores().map((athlete, i) => {
           return <PlayerScore athlete={athlete} key={i} />;
         })}
       </tbody>
